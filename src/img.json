@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "img": "angry-beavers.jpg"
+  },
+  {
+    "id": 2,
+    "img": "arnold.jpg"
+  },
+  {
+    "id": 3,
+    "img": "captain-planet.jpg"
+  },
+  {
+    "id": 4,
+    "img": "carmen-sandiego.jpg"
+  },
+  {
+    "id": 5,
+    "img": "chuckie.jpg"
+  },
+  {
+    "id": 6,
+    "img": "gerald.jpg"
+  },
+  {
+    "id": 7,
+    "img": "green-ranger.jpg"
+  },
+  {
+    "id": 8,
+    "img": "otto.jpg"
+  },
+  {
+    "id": 9,
+    "img": "ren-and-stimpy.jpg"
+  },
+  {
+    "id": 10,
+    "img": "ren-and-stimpy-2.jpg"
+  },
+  {
+    "id": 11,
+    "img": "tito.jpg"
+  },
+  {
+    "id": 12,
+    "img": "tommy-pickles.jpg"
+  }
+]
