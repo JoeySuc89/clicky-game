@@ -54,12 +54,12 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <>
         <Navbar
           score={this.state.score}
         />
         <Header />
-        <div className="wrapper row">
+        <div className="row">
           {this.state.img.map(img => (
             <Card
               imageClick={this.imageClick}
@@ -69,7 +69,7 @@ class App extends Component {
             />
           ))}
         </div>
-      </div>
+      </>
     );
   }
 }
