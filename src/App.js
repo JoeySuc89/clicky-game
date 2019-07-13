@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import Navbar from "./components/Navbar";
-import Header from "./components/Jumbotron";
-import Card from "./components/imgCard";
-import img from "./img.json";
-import "./App.css";
+import React, { Component } from "react"
+import Navbar from "./components/Navbar"
+import Jumbotron from "./components/Jumbotron"
+import Card from "./components/imgCard"
+import img from "./img.json"
+import "./App.css"
 
 
 class App extends Component {
@@ -26,9 +26,13 @@ class App extends Component {
         score: 0
       });
       alert("You lost buddy! Wanna give it another shot?")
+
+
     } else {
-      this.setState({
-        img: this.state.img.sort(function (a, b) {
+      
+      this.setState(
+        {
+         img: this.state.img.sort(function (a, b) {
           return 0.5 - Math.random();
         }),
         clickedImage: this.state.clickedImage.concat(
@@ -54,22 +58,23 @@ class App extends Component {
 
   render() {
     return (
-      <>
+      <div>
         <Navbar
           score={this.state.score}
         />
-        <Header />
-        <div className="row">
+        <Jumbotron />
+        <div className="wrapper row">
+
           {this.state.img.map(img => (
             <Card
               imageClick={this.imageClick}
               id={img.id}
               key={img.id}
-              img={img.image}
+              image={img.img}
             />
           ))}
         </div>
-      </>
+      </div>
     );
   }
 }
